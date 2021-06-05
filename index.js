@@ -27,7 +27,7 @@ const EXCHANGE_ADDRESS = '0xc0fc958f7108be4060F33a699a92d3ea49b0B5f0'
 const exchangeContract = new web3.eth.Contract(EXCHANGE_ABI, EXCHANGE_ADDRESS);
 
 // Minimum eth to swap
-const ETH_AMOUNT = web3.utils.toWei('001', 'Ether')
+const ETH_AMOUNT = web3.utils.toWei('1', 'Ether')
 console.log("Eth Amount", ETH_AMOUNT)
 
 const ETH_SELL_PRICE = web3.utils.toWei('200', 'Ether') // 200 Dai a.k.a. $200 USD

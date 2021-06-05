@@ -84,6 +84,7 @@ async function monitorPrice() {
     const daiAmount = await exchangeContract.methods.getEthToTokenInputPrice(ETH_AMOUNT).call()
     const price = web3.utils.fromWei(daiAmount.toString(), 'Ether')
     console.log('Eth Price:', price, ' DAI')
+    console.log('Sell Price:', ETH_SELL_PRICE, ' .')
 
     if(price >= ETH_SELL_PRICE) {
       console.log('Selling Eth...')

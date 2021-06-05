@@ -85,7 +85,7 @@ async function monitorPrice() {
     const price = web3.utils.fromWei(daiAmount.toString(), 'Ether')
     console.log('Eth Price:', price, ' DAI')
 
-    if(price <= ETH_SELL_PRICE) {
+    if(price >= ETH_SELL_PRICE) {
       console.log('Selling Eth...')
       // Check balance before sale
       await checkBalances()
